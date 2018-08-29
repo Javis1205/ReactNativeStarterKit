@@ -1,0 +1,1 @@
+<img src="https://preview.ibb.co/m2MYNp/rnsk_logo.png" alt="React Native Starter Kit" width="400" />

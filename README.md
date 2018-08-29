@@ -8,3 +8,21 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Javis1205/ReactNativeStarterKit.svg?style=flat-square)](https://github.com/Javis1205/ReactNativeStarterKit/issues-pr)
 
 ---
+
+## 👋 Intro
+
+---
+
+## 📖 Docs
+
+---
+
+## 🚀 Getting Started
+
+---
+
+## 👊 Further Help?
+
+---
+
+## 💡 Inspiration

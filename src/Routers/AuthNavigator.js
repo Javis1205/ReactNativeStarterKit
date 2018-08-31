@@ -1,13 +1,14 @@
-import { createSwitchNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 import LoadingScreen from "../Screens/LoadingScreen";
 import LoginScreen from "../Screens/LoginScreen";
 
-export default createSwitchNavigator(
+export default createStackNavigator(
     {
         LoginScreen: LoginScreen,
         LoadingScreen: LoadingScreen
     },
     {
-        initialRouteName: "LoadingScreen"
+        initialRouteName: "LoadingScreen",
+        headerMode: 'none',
     }
 );

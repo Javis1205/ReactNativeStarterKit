@@ -1,16 +1,27 @@
 import React from 'react';
 import {
     View,
-    Text
+    Text,
+    TouchableOpacity
 } from 'react-native';
+import {
+    StackActions,
+    NavigationActions
+} from 'react-navigation';
 class LoginScreen extends React.Component {
+    gotoMain(){
+        this.props.navigation.navigate('App')
+    }
     render(){
         return(
             <View style={styles.container}>
-                <Text>
-                    LoginScreen
-                </Text>
-                
+                <TouchableOpacity
+                    onPress={()=>{this.gotoMain()}}
+                >
+                    <Text>
+                        LoginScreen
+                    </Text>
+                </TouchableOpacity>
             </View>
         )
     }

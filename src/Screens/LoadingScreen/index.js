@@ -1,31 +1,33 @@
 import React from 'react';
 import {
     View,
-    Text
+    ActivityIndicator
 } from 'react-native';
 import {
     ImageCached
-} from '../../Components'
-import Icon from 'react-native-vector-icons/dist/FontAwesome';
+} from '../../Components';
+import {
+    NavigationActions,
+    StackActions
+} from 'react-navigation';
 class LoadingScreen extends React.Component {
+    componentWillMount(){
+        this.gotoLogin();
+    }
+    gotoLogin(){
+        const resetAction = StackActions.reset({
+            index: 0,
+            actions: [
+                NavigationActions.navigate({ routeName: 'LoginScreen' }),
+            ],
+        });
+        this.props.navigation.dispatch(resetAction);
+    }
     render(){
         return(
             <View style={styles.container}>
-            
-                <Text>
-                    LoadingScreen222
-                </Text>
-                <Icon 
-                    name="rocket" 
-                    size={30} 
-                    color="#900" 
-                />
-                <ImageCached
-                    style={{
-                        height:100,
-                        width:100
-                    }}
-                    url={'https://anhdephd.com/wp-content/uploads/2017/04/tai-hinh-anime-cute-de-thuong-cho-may.jpg'}
+                <ActivityIndicator
+                    size='large'
                 />
             </View>
         )

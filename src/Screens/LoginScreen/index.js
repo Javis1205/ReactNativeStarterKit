@@ -10,6 +10,7 @@ class LoginScreen extends React.Component {
                 <Text>
                     LoginScreen
                 </Text>
+                
             </View>
         )
     }

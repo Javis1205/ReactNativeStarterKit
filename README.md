@@ -29,6 +29,8 @@ The project is _super_ helpful to kick-start your next project, as it provides a
 - __API/Data example__
     -  [Axios](https://github.com/axios/axios/)
     -  [Redux-Saga](https://github.com/redux-saga/redux-saga/)
+- __Push Notification__
+    -  [Firebase](https://github.com/invertase/react-native-firebase)
 
 ---
 

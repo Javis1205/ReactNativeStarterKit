@@ -138,6 +138,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-fast-image')
+    compile project(':rn-fetch-blob')
     compile project(':react-native-vector-icons')
     implementation project(':react-native-firebase')
     implementation project(':react-native-splash-screen')

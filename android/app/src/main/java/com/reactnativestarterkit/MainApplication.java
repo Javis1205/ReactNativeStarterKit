@@ -3,6 +3,10 @@ package com.reactnativestarterkit;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.dylanvann.fastimage.FastImageViewPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import io.invertase.firebase.RNFirebasePackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
@@ -26,8 +30,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new VectorIconsPackage(),
+            new FastImageViewPackage(),
+            new RNFetchBlobPackage(),
             new RNFirebasePackage(),
+            new VectorIconsPackage(),
             new SplashScreenReactPackage()
       );
     }

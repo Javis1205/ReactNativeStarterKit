@@ -2,10 +2,6 @@ import axios from 'axios';
 import {Alert, Platform} from 'react-native';
 import * as api from './api';
 import {store} from '../store';
-import * as types from "../actions/type";
-
-const MimeLookup = require('mime-lookup');
-const mime = new MimeLookup(require('mime-db'));
 
 const defaultNetworkError = {
     meta: {

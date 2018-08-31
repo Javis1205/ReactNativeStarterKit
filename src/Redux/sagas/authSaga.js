@@ -1,7 +1,7 @@
 import { put, takeLatest } from 'redux-saga/effects';
-import { requestAPI } from '../service/request';
+import { requestAPI } from '../services/request';
 import * as types from '../actions/types';
-import * as api from '../service/api';
+import * as api from '../services/api';
 
 function* register(action) {
     const response = yield requestAPI(api.Register, api.POST, action.params);
